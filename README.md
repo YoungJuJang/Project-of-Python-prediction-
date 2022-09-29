@@ -1,2 +1,39 @@
-# Project-of-Python-prediction-
-Prediction of the number of cafeteria customers.
+## 구내식당 식수 인원 예측 AI 경진대회 
+<br>
+
+### 정형 | 한국토지주택공사 | 식수예측 | MAE | [DACON](https://dacon.io/competitions/official/235743/overview/description)
+
+<br>
+
+### > *Description*
+머신러닝을 활용하여 한국토지주택공사 구내식당의 요일별 점심, 저녁식사를 먹는 인원을 예측하여,
+빅데이터 분석으로 얻어지는 보다 정확도 높은 예측을 통해 잔반 발생량을 획기적으로 줄이고자 한다.
+
+### > *Environment*
+
+**1) 사용 언어:** Python
+
+**2) Tools:** Jupyter Notebook (Python 3.9.7)
+
+**3) 분석 모델:** RandomForest, LightGBM, CatBoost
+
+**4) 방법론:**
+데이터 전처리 작업을 수행하고 EDA를 통해 데이터의 특성을 살펴본다. Baseline 코딩 후 모델 성능을 향상을 위한 최적화 및 튜닝을 진행하여 학습하고 평가 후 최종 테스트 데이터를 예측한다.
+
+**4) Data Files:** 
+
+1. train.csv
+
+일자|요일|본사정원수|본사휴가자수|본사출장자수|시간외근무명령서승인건수|현본사소속재택근무자수|조식메뉴|중식메뉴|석식메뉴|중식계|석식계
+---|---|---|---|---|---|---|---|---|---|---|---|
+
+
+2. test.csv
+
+일자|요일|본사정원수|본사휴가자수|본사출장자수|시간외근무명령서승인건수|현본사소속재택근무자수|조식메뉴|중식메뉴|석식메뉴
+---|---|---|---|---|---|---|---|---|---|
+
+3. sample_submission.csv
+
+일자|중식계|석식계
+---|---|---|
